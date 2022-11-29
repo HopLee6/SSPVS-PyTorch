@@ -36,7 +36,7 @@ Run the following command to train the model:
 $ sh main.sh CFG_File
 ```
 
-Example for training the model on TVSum in the canonical setting: 
+Example for training the model on SumMe in the augmented setting: 
 
 ```
 $ sh main.sh cfgs/sm_a.yaml
