@@ -61,7 +61,7 @@ Run the following command to train the model:
 
 ```
 $ cd ..
-$ sh main.sh CFG_File
+$ sh main.sh CFG_FILE
 ```
 
 Example for training the model on SumMe in the augmented setting: 
@@ -70,12 +70,12 @@ Example for training the model on SumMe in the augmented setting:
 $ sh main.sh cfgs/sm_a.yaml
 ```
 
-If you pretrain the model by yourself, change `resume` in `CFG_File`  to the model saved in `ssl/results/SSL/checkpoints`. The results are recoded in ``records.csv``.
+If you pretrain the model by yourself, change `resume` in `CFG_FILE`  to the model saved in `ssl/results/SSL/checkpoints`. The results are recoded in ``records.csv``.
 
 
 ## YTVT Dataset
 
-We also provide the original videos and text information of YTVT [here]().
+We also provide the original videos and text information of YTVT [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/End9OkDNT5FMixpK1LECLA8BwyEuaVKq4gD9nZVngQ4Eqg?e=DHrre3).
 
 ## License and Citation
 
@@ -91,7 +91,7 @@ If you use this code or reference our paper in your work please cite this public
   year={2022}
 }
 ```
-<!-- ## Acknowledgement
+## Acknowledgement
 
-The code is developed based on [VASNet](https://github.com/ok1zjf/VASNet). -->
+The code is developed based on [VASNet](https://github.com/ok1zjf/VASNet).
 
