@@ -19,7 +19,7 @@ Additionally, we introduce a progressive video summarization method, where the i
 
 ## Requirements and Dependencies
 
-- python=3.8.5
+- python=3.8.13
 - pytorch=1.12, ortools=9.3.10497
 - pytorch-lightning=1.6.5 
 - pytorch-transformers=1.2.0
@@ -44,7 +44,7 @@ Run the following command to train the model:
 
 ```
 $ cd ssl
-$ CUDA_VISIBLE_DEVICES=0,1 python main.py --config ssl.yaml
+$ CUDA_VISIBLE_DEVICES=0,1 python main_ssl.py --config ssl.yaml
 ```
 The trained model is saved in `ssl/results/SSL/checkpoints`.
 
@@ -57,10 +57,9 @@ Download [the data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopen
 
 
 ### Training and Evaluation of Video Summarization
-Run the following command to train the model: 
+Run the following command in the root dictionary to train the model: 
 
 ```
-$ cd ..
 $ sh main.sh CFG_FILE
 ```
 where `CFG_FILE` is a `yaml` file containing the configuration for different settings. We provide several configuration files in `cfgs/`. Here is an example for training the model on SumMe in the augmented setting: 
