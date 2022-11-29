@@ -70,7 +70,7 @@ Example for training the model on SumMe in the augmented setting:
 $ sh main.sh cfgs/sm_a.yaml
 ```
 
-The results are recoded in ``records.csv``.
+If you pretrain the model by yourself, change `resume` in `CFG_File`  to the model saved in `ssl/results/SSL/checkpoints`. The results are recoded in ``records.csv``.
 
 
 
