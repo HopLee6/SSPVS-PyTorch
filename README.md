@@ -25,19 +25,42 @@ Additionally, we introduce a progressive video summarization method, where the i
 - pytorch-transformers=1.2.0
 
 
-## Data Preparation
-
-Download [data.zip](https://drive.google.com/file/d/1txVUTZNWDxXVGZUAOs7Hh7FqDLEOrs8w/view?usp=sharing) and uncompress it to ``data/``.
-
-## Self-supervised Pretrained Model
-
-Download [the pretrained model](https://drive.google.com/file/d/1VUSqlXuDZt0HW2TXv5bVl8jqfIjg4Wvx/view?usp=sharing) to the root dictionary.
+## Self-supervised Pretraining
 
 
-## Training and Evaluation
+Download [the pretrained model](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EW4hDPJnGWZHr8c19gZcXYQB2ajRX8bpdn4_c_SBfZ-Uig?e=xvhit3) to the root dictionary.
+
+OR
+
+Follow the following steps to train the self-supervised model.
+
+### Data Preparation
+
+Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) and uncompress them to `ssl/features_all/` and `ssl/info_embed_all`, respectively.
+
+
+### Self-supervised Pretraining
 Run the following command to train the model: 
 
 ```
+$ cd ssl
+$ CUDA_VISIBLE_DEVICES=0,1 python main.py --config ssl.yaml
+```
+The trained model is saved in `ssl/results/SSL/checkpoints`.
+
+
+## Progressive Video Summarization
+
+### Data Preparation
+
+Download [data.zip](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
+
+
+### Training and Evaluation of Video Summarization
+Run the following command to train the model: 
+
+```
+$ cd ..
 $ sh main.sh CFG_File
 ```
 

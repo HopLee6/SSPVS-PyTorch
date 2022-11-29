@@ -1,0 +1,46 @@
+# model
+model_name: ssl_model
+dropout_vid: 0.1
+nhead_vid: 8
+nhid_vid: 4096
+nlayers_vid: 3
+pos_enc_weight: 1
+text_trainable: True
+window_size: 9
+dropout_classifier: 0.1
+similarity_type: 'cos'
+  
+# training set
+set_name_train: video_info
+feature_root: features_all
+info_embed_root: info_embed_all
+train_list: list_file/train_list.json
+val_list: list_file/val_list.json
+max_cat: 2
+max_query: 2
+max_title: 5
+max_desc: 50
+max_video: 256
+
+
+# optimization
+resume: 
+lr: 0.000001
+milestones: [300]
+gamma: 0.1
+max_epochs: 200
+batch_size_train: 8
+batch_size_val: 8
+batch_size_test: 1
+loss: fuse
+alpha1: 5
+alpha2: 1
+margin: 1.414
+
+# general
+num_workers: 4
+seed: 12345
+monitor: ['val/video_text_acc','max']
+val_freq: 2
+save_top_k: 1  # -1: save every val_freq epoch; k: save best k
+num_sanity_val_steps: -1
