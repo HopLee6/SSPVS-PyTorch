@@ -63,8 +63,7 @@ Run the following command to train the model:
 $ cd ..
 $ sh main.sh CFG_FILE
 ```
-
-Example for training the model on SumMe in the augmented setting: 
+where `CFG_FILE` is a `yaml` file containing the configuration for different settings. We provide several configuration files in `cfgs/`. Here is an example for training the model on SumMe in the augmented setting: 
 
 ```
 $ sh main.sh cfgs/sm_a.yaml
