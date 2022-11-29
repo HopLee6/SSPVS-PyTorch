@@ -1,0 +1,40 @@
+# video model
+model_name: sspvs
+dropout_vid: 0.1
+nhead_vid: 8
+nhid_vid: 4096
+nlayers_vid: 3
+pos_enc_weight: 0.1
+with_info_guide: True
+text_trainable: True
+dropout_predictor: 0.1
+iter: 4 
+
+# testing set
+set_name_test: video_info_test
+data_file: data/tvsum.h5
+split_file: splits/tvsum_splits.json
+info_embed_root_test: data/tvsum_info_embed
+
+# optimization
+resume: pretrained_model.ckpt
+lr: 0.0001
+milestones: [200]
+gamma: 0.1
+max_epochs: 40
+batch_size_train: 4
+batch_size_val: 1
+loss: mse
+
+
+max_cat: 1
+max_query: 3
+max_title: 10
+max_desc: 15
+max_video: 512
+ 
+# general
+num_workers: 0
+seed: 0
+val_freq: 1
+num_sanity_val_steps: 0

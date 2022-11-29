@@ -1,0 +1,32 @@
+# video model
+model_name: sspvs
+dropout_vid: 0.1
+nhead_vid: 8
+nhid_vid: 4096
+nlayers_vid: 3
+pos_enc_weight: 0.1
+dropout_predictor: 0.5
+iter: 2
+
+# testing set
+set_name_test: video_info_test2
+split_file: splits/tvsum_trans_splits.json
+set_multiply: 1
+
+# optimization
+resume: pretrained_model.ckpt
+lr: 0.000002
+milestones: [200]
+gamma: 0.1
+max_epochs: 10
+batch_size_train: 16
+batch_size_val: 1
+loss: mse
+
+max_video: 512
+ 
+# general
+num_workers: 0
+seed: 12345
+val_freq: 1
+num_sanity_val_steps: 0
