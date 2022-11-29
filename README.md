@@ -40,10 +40,9 @@ Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/pers
 
 
 ### Self-supervised Pretraining
-Run the following command to train the model: 
+Run the following command in `ssl/` to train the self-supervised model: 
 
 ```
-$ cd ssl
 $ CUDA_VISIBLE_DEVICES=0,1 python main_ssl.py --config ssl.yaml
 ```
 The trained model is saved in `ssl/results/SSL/checkpoints`.
@@ -57,7 +56,7 @@ Download [the data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopen
 
 
 ### Training and Evaluation of Video Summarization
-Run the following command in the root dictionary to train the model: 
+Run the following command in the root dictionary to train the video summarization model: 
 
 ```
 $ sh main.sh CFG_FILE
