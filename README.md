@@ -21,7 +21,7 @@ Additionally, we introduce a progressive video summarization method, where the i
 
 - python=3.8.5
 - pytorch=1.12, ortools=9.3.10497
-- pylorch-lightning=1.6.5 
+- pytorch-lightning=1.6.5 
 - pytorch-transformers=1.2.0
 
 
