@@ -8,8 +8,13 @@ IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023
 
 ## Introduction
 
+We propose a multimodal self-supervised learning framework to obtain semantic representations of videos, which benefits the video summarization task. 
 
-Modern video summarization methods are based on deep neural networks that require a large amount of annotated data for training. However, existing datasets for video summarization are small-scale, easily leading to over-fitting of the deep models. Considering that the annotation of large-scale datasets is time-consuming, we propose a multimodal self-supervised learning framework to obtain semantic representations of videos, which benefits the video summarization task. Specifically, the self-supervised learning is conducted by exploring the  semantic consistency between  the videos and text in both coarse-grained and fine-grained fashions, as well as recovering  masked frames in the  videos. The multimodal framework is trained on a newly-collected dataset that consists of video-text pairs. Additionally, we introduce a progressive video summarization method, where the important content in a video is pinpointed progressively to generate better summaries. Extensive experiments have proved the effectiveness and superiority of our method in rank correlation coefficients and F-score.
+Specifically, the self-supervised learning is conducted by exploring the  semantic consistency between  the videos and text in both coarse-grained and fine-grained fashions, as well as recovering  masked frames in the  videos. 
+
+The multimodal framework is trained on a newly-collected dataset that consists of video-text pairs. 
+
+Additionally, we introduce a progressive video summarization method, where the important content in a video is pinpointed progressively to generate better summaries.
 
 
 ## Requirements and Dependencies
