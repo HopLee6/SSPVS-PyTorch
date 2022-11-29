@@ -36,7 +36,7 @@ Follow the following steps to train the self-supervised model.
 
 ### Data Preparation
 
-Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) and uncompress them to `ssl/features_all/` and `ssl/info_embed_all`, respectively.
+Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [text information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) and uncompress them to `ssl/features/` and `ssl/info_embed`, respectively.
 
 
 ### Self-supervised Pretraining
@@ -52,7 +52,7 @@ The trained model is saved in `ssl/results/SSL/checkpoints`.
 
 ### Data Preparation
 
-Download [the data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
+Download the [data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
 
 
 ### Training and Evaluation of Video Summarization
@@ -61,7 +61,7 @@ Run the following command in the root dictionary to train the video summarizatio
 ```
 $ sh main.sh CFG_FILE
 ```
-where `CFG_FILE` is a `yaml` file containing the configuration for different settings. We provide several configuration files in `cfgs/`. Here is an example for training the model on SumMe in the augmented setting: 
+where `CFG_FILE` is a configuration file (`*.yaml`) for different settings. We provide several configuration files in `cfgs/`. Here is an example for training the model on SumMe in the augmented setting: 
 
 ```
 $ sh main.sh cfgs/sm_a.yaml

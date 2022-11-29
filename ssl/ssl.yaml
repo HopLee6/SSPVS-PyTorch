@@ -12,8 +12,8 @@ similarity_type: 'cos'
   
 # training set
 set_name_train: video_info
-feature_root: features_all
-info_embed_root: info_embed_all
+feature_root: features
+info_embed_root: info_embed
 train_list: list_file/train_list.json
 val_list: list_file/val_list.json
 max_cat: 2
