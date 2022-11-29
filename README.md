@@ -30,7 +30,7 @@ Additionally, we introduce a progressive video summarization method, where the i
 
 Download [the pretrained model](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EW4hDPJnGWZHr8c19gZcXYQB2ajRX8bpdn4_c_SBfZ-Uig?e=xvhit3) to the root dictionary.
 
-OR
+**OR**
 
 Follow the following steps to train the self-supervised model.
 
@@ -53,7 +53,7 @@ The trained model is saved in `ssl/results/SSL/checkpoints`.
 
 ### Data Preparation
 
-Download [data.zip](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
+Download [the data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
 
 
 ### Training and Evaluation of Video Summarization
@@ -73,7 +73,9 @@ $ sh main.sh cfgs/sm_a.yaml
 If you pretrain the model by yourself, change `resume` in `CFG_File`  to the model saved in `ssl/results/SSL/checkpoints`. The results are recoded in ``records.csv``.
 
 
+## YTVT Dataset
 
+We also provide the original videos and text information of YTVT [here]().
 
 ## License and Citation
 
