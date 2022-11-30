@@ -67,7 +67,7 @@ where `CFG_FILE` is a configuration file (`*.yaml`) for different settings. We p
 $ sh main.sh cfgs/sm_a.yaml
 ```
 
-If you pretrain the model by yourself, change `resume` in `CFG_FILE`  to the model saved in `ssl/results/SSL/checkpoints/`. The video summarization results are recoded in ``records.csv``.
+If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model saved in `ssl/results/SSL/checkpoints/`. The video summarization results are recoded in ``records.csv``.
 
 
 ## YTVT Dataset
