@@ -72,7 +72,7 @@ If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model 
 
 ## YTVT Dataset
 
-We also provide the original videos and text information of YTVT [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/End9OkDNT5FMixpK1LECLA8BwyEuaVKq4gD9nZVngQ4Eqg?e=DHrre3).
+We provide the original videos and text information of YTVT [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/End9OkDNT5FMixpK1LECLA8BwyEuaVKq4gD9nZVngQ4Eqg?e=DHrre3). Besides, we also provide the re-collected text information of SumMe and TVSum [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/EpCVM6sGKJhMksW_bnuCoxgBe6dlmwxRkXCZIN0X0erpcw?e=Hi8eDn).
 
 ## License and Citation
 
