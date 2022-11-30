@@ -36,7 +36,7 @@ Follow the following steps to train the self-supervised model.
 
 ### Data Preparation
 
-Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [text information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) and uncompress them to `ssl/features/` and `ssl/info_embed/`, respectively.
+Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [text information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) of the YTVT dataset and uncompress them to `ssl/features/` and `ssl/info_embed/`, respectively.
 
 
 ### Self-supervised Pretraining
@@ -67,7 +67,7 @@ where `CFG_FILE` is a configuration file (`*.yaml`) for different settings. We p
 $ sh main.sh cfgs/sm_a.yaml
 ```
 
-If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model saved in `ssl/results/SSL/checkpoints/`. The video summarization results are recoded in ``records.csv``.
+If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model saved in `ssl/results/SSL/checkpoints/`. The results of video summarization are recoded in ``records.csv``.
 
 
 ## YTVT Dataset
