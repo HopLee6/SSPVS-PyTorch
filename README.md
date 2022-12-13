@@ -1,5 +1,5 @@
 # Progressive Video Summarization via Multimodal Self-supervised Learning (SSPVS)
- [Paper](https://arxiv.org/pdf/2201.02494.pdf)
+[Paper](https://arxiv.org/pdf/2201.02494.pdf) | [Supplementary Material](https://unimelbcloud-my.sharepoint.com/:b:/g/personal/haopengl1_student_unimelb_edu_au/EQnk1g8ZcE9BsGFJ-6upSXUBR5n1YVzeBjhfKglk9tJmNQ?e=P15I1c)
 
 Haopeng Li, Qiuhong Ke, [Mingming Gong](https://mingming-gong.github.io/), Tom Drummond
 
