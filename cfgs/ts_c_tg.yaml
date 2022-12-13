@@ -13,7 +13,7 @@ dropout_predictor: 0.1
 iter: 4 
 
 # testing set
-set_name_test: video_info_test
+set_name_test: video_info
 data_file: data/tvsum.h5
 split_file: splits/tvsum_splits.json
 info_embed_root_test: data/tvsum_info_embed

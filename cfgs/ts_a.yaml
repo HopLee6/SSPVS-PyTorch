@@ -11,7 +11,7 @@ dropout_predictor: 0.3
 iter: 1
 
 # testing set
-set_name_test: video_info_test2
+set_name_test: video_info_aug
 split_file: splits/tvsum_aug_splits.json
 set_multiply: 2
 
