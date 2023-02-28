@@ -81,11 +81,12 @@ The use of this code is RESTRICTED to **non-commercial research and educational 
 If you use this code or reference our paper in your work please cite this publication as:
 
 ```
-@article{haopeng2022video,
+@inproceedings{li2023progressive,
   title={Progressive Video Summarization via Multimodal Self-supervised Learning},
-  author={Haopeng, Li and Qiuhong, Ke and Mingming, Gong and Drummond, Tom},
-  journal={arXiv preprint arXiv:2201.02494},
-  year={2022}
+  author={Li, Haopeng and Ke, Qiuhong and Gong, Mingming and Drummond, Tom},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={5584--5593},
+  year={2023}
 }
 ```
 ## Acknowledgement
