@@ -28,7 +28,7 @@ Additionally, we introduce a progressive video summarization method, where the i
 ## Self-supervised Pretraining
 
 
-Download the [pretrained model](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EW4hDPJnGWZHr8c19gZcXYQB2ajRX8bpdn4_c_SBfZ-Uig?e=xvhit3) to the root dictionary.
+Download the pretrained model [pretrained_model.ckpt](https://figshare.com/articles/journal_contribution/SSPVS/29979121) to the root dictionary.
 
 **OR**
 
@@ -36,7 +36,7 @@ Follow the following steps to train the self-supervised model.
 
 ### Data Preparation
 
-Download the [visual features](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/Efr65A_gDpdIqMxnxRWbIt4BpBe8XYhc4_KX2_QlhnyCig?e=znqRT2) and [text information embeddings](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/EVlgG9lOExFNl3Ds1eBigdkBSqTDv7CR9e4vXKcpl_f3mQ?e=dcSdVs) of the YTVT dataset and uncompress them to `ssl/features/` and `ssl/info_embed/`, respectively.
+Download the visual features [feat.z*](https://figshare.com/articles/journal_contribution/SSPVS/29979121) and text information embeddings [info_embed.zip](https://figshare.com/articles/journal_contribution/SSPVS/29979121) of the YTVT dataset and uncompress them to `ssl/features/` and `ssl/info_embed/`, respectively.
 
 
 ### Self-supervised Pretraining
@@ -52,7 +52,7 @@ The trained model is saved in `ssl/results/SSL/checkpoints/`.
 
 ### Data Preparation
 
-Download the [data](https://unimelbcloud-my.sharepoint.com/:u:/g/personal/haopengl1_student_unimelb_edu_au/ER72XF7I-_NBoGFpBghHSdEBAO753RSF6_cYTLvfMTlVXw?e=NLjcUO) and uncompress it to ``data/``.
+Download the [data.zip](https://figshare.com/articles/journal_contribution/SSPVS/29979121) and uncompress it to ``data/``.
 
 
 ### Training and Evaluation of Video Summarization
@@ -72,7 +72,7 @@ If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model 
 
 ## Source Data
 
-We provide the original videos and text information of YTVT [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/End9OkDNT5FMixpK1LECLA8BwyEuaVKq4gD9nZVngQ4Eqg?e=DHrre3). Besides, we also provide the re-collected text information of SumMe and TVSum [here](https://unimelbcloud-my.sharepoint.com/:f:/g/personal/haopengl1_student_unimelb_edu_au/EpCVM6sGKJhMksW_bnuCoxgBe6dlmwxRkXCZIN0X0erpcw?e=Hi8eDn).
+Besides, we also provide the re-collected text information of SumMe and TVSum [SumMe_text_info.json/TVSum_text_info.json](https://figshare.com/articles/journal_contribution/SSPVS/29979121).
 
 ## License and Citation
 
