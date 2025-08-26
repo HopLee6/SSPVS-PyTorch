@@ -72,7 +72,7 @@ If you pretrain the model yourself, change `resume` in `CFG_FILE`  to the model 
 
 ## Source Data
 
-Besides, we also provide the re-collected text information of SumMe and TVSum [SumMe_text_info.json/TVSum_text_info.json](https://figshare.com/articles/journal_contribution/SSPVS/29979121).
+We provide the text information of YTVT in [YTVT.zip](https://figshare.com/articles/journal_contribution/SSPVS/29979121). Besides, we also provide the re-collected text information of SumMe and TVSum [SumMe_text_info.json/TVSum_text_info.json](https://figshare.com/articles/journal_contribution/SSPVS/29979121).
 
 ## License and Citation
 
